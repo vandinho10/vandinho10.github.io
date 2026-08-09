@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Vanderson Oliveira — Analista de suporte técnico em telecomunicações, técnico em redes. Ecossistema de projetos: PreventiveCheck, backend Go, SPAs Svelte, Docker/Traefik e automações.">
+  <meta name="author" content="Vanderson Oliveira">
+  <meta property="og:title" content="Vanderson Oliveira | GitHub Pages">
+  <meta property="og:description" content="Perfil profissional e projetos de Vanderson Oliveira (vandinho10).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vandinho10.github.io">
+  <title>Vanderson Oliveira | vandinho10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="#inicio"><span class="nav-dot">&lt;/&gt;</span> vandinho10</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#stack">Stack</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#links">Links</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="hero-kicker">Olá, eu sou</p>
+          <h1 class="hero-title">Vanderson Oliveira</h1>
+          <p class="hero-role">Analista de suporte técnico em telecomunicações (Claro) · Técnico em redes e eletrônica ·
+            Programador fullstack nas horas vagas</p>
+          <div class="hero-badges">
+            <span class="badge">CFT</span>
+            <span class="badge">Redes</span>
+            <span class="badge">Telecom</span>
+            <span class="badge">Eletrônica</span>
+            <span class="badge">Python</span>
+            <span class="badge">Go</span>
+            <span class="badge">C++</span>
+            <span class="badge">Svelte</span>
+            <span class="badge">Docker</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-ghost" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">vandinho10@github: ~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-var">$</span> whoami</p>
+              <p class="t-out">Vanderson Oliveira — vandinho10</p>
+              <p><span class="t-var">$</span> cat --help | head -3</p>
+              <p class="t-out">monitoramento, redes, telecom,</p>
+              <p class="t-out">automação e código de verdade.</p>
+              <p><span class="t-var">$</span> ./automatizar --hobby=fullstack</p>
+              <p class="t-out t-cursor">ok. <span class="cursor"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre ===== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <h2 class="section-title reveal">Sobre</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <p class="lead">
+              Profissional com vasta experiência em <strong>informática, redes, eletrônica e telecomunicações</strong>.
+              Em todos os setores por onde passou, deixou scripts, aplicativos e serviços de automação de processos.
+            </p>
+            <p>
+              Atualmente atuo na <strong>Claro</strong>, em telecomunicações, com infraestrutura de redes de operadora —
+              roteadores (HPe, Cisco, Nokia, Datacom), segurança NGFW (Fortinet, Palo Alto, Cisco), SD-WAN, manutenção
+              em POPs e datacenters, rádio-enlaces PDH/SDH e monitoramento de backbone óptico (DWDM).
+            </p>
+            <p>
+              Anteriormente, na <strong>FiscalTech</strong>, atuei como analista de monitoramento e suporte em
+              <strong>equipamentos viários de segurança</strong>, com foco em radares de controle de velocidade —
+              garantindo operação contínua, rotas otimizadas para técnicos de campo e suporte dentro dos SLAs.
+            </p>
+            <p>
+              Como hobby, estudo programação fullstack e construo aplicações completas — do backend ao frontend e à
+              infraestrutura. O que começa como hobby se transforma em ferramentas de produção: coletas de rede
+              automatizadas, backend em Go, SPAs em Svelte e um orquestrador Docker próprio.
+            </p>
+          </div>
+          <div class="reveal">
+            <ul class="check-list">
+              <li>Automação de processos e coleta de dados em larga escala</li>
+              <li>Backend Go modular (auth, preventivas, auditoria, gestão, bots)</li>
+              <li>SPAs com Svelte 5, Vite e Tailwind (SPA sem framework)</li>
+              <li>Orquestração com Docker, docker-compose, Traefik e Nginx (ZDD)</li>
+              <li>Segurança: JWT httpOnly, privilégio mínimo, whitelist, criptografia</li>
+              <li>Observabilidade com Prometheus, Grafana e dashboards</li>
+              <li>Testes automatizados: pytest e suíte Go</li>
+              <li>SemVer + Conventional Commits + release automatizada</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experiência ===== -->
+    <section class="section section-alt" id="experiencia">
+      <div class="container">
+        <h2 class="section-title reveal">Experiência</h2>
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-tag">Atual</div>
+            <h3>Telecomunicações e redes de operadora</h3>
+            <p class="muted">Claro</p>
+            <p>
+              Configuração e gerenciamento de roteadores (HPe, Cisco, Nokia, Datacom), NGFW (Fortinet, Palo Alto,
+              Cisco),
+              SD-WAN, manutenção em POPs e datacenters, rádio-enlace PDH/SDH (PTP/PtMP), redes móveis 2G/3G/4G/5G,
+              monitoramento do backbone óptico (DWDM) e certificação de enlaces de fibra óptica (OTDR, Viavi, JDSU,
+              EXFO).
+            </p>
+            <ul class="tags">
+              <li>Roteadores</li>
+              <li>NGFW</li>
+              <li>SD-WAN</li>
+              <li>PDH/SDH</li>
+              <li>DWDM</li>
+              <li>Fibra óptica</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-tag">Anterior</div>
+            <h3>Analista de monitoramento e suporte</h3>
+            <p class="muted">FiscalTech · equipamentos viários de segurança</p>
+            <p>
+              Monitoramento em tempo real de radares de controle de velocidade, análise de dados de desempenho, detecção
+              precoce de falhas, elaboração de rotas otimizadas para técnicos de campo e suporte remoto (telefone,
+              WhatsApp e acesso remoto) para minimizar o tempo de inatividade e cumprir os SLAs.
+            </p>
+            <ul class="tags">
+              <li>Monitoramento</li>
+              <li>Análise de falhas</li>
+              <li>Rotas otimizadas</li>
+              <li>Suporte remoto</li>
+              <li>SLA</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-tag">Anterior</div>
+            <h3>Analista de operações</h3>
+            <p class="muted">FiscalTech · medidores de velocidade e balanças rodoviárias</p>
+            <p>
+              Ajuste e calibração de medidores de velocidade (doppler, laser e laço indutivo) e balanças, aferidos pelo
+              Inmetro/AEM-MS. Implantação, manutenção preditiva e corretiva, gestão de OS e integração de sistema
+              detector com semafórica.
+            </p>
+            <ul class="tags">
+              <li>Calibração Inmetro</li>
+              <li>Doppler / Laser</li>
+              <li>Gestão de OS</li>
+              <li>Manutenção preditiva</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-tag">Primeira</div>
+            <h3>Analista de suporte técnico</h3>
+            <p class="muted">RPT Distribuidora de Peças</p>
+            <p>
+              Administração e manutenção de servidores Windows e Linux, atendimento interno e externo, desenvolvimento e
+              implantação de rotinas para RH e Logística e manutenção da infraestrutura de dados e voz.
+            </p>
+            <ul class="tags">
+              <li>Windows Server</li>
+              <li>Linux</li>
+              <li>Automação de rotinas</li>
+              <li>Suporte</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Habilidades ===== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <h2 class="section-title reveal">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Redes e Segurança</h3>
+            <ul>
+              <li>Roteadores: HPe, Cisco, Nokia, Datacom</li>
+              <li>NGFW: Fortinet, Palo Alto, Cisco</li>
+              <li>SD-WAN e redes definidas por software</li>
+              <li>Monitoramento de topologias e backbone</li>
+              <li>Segurança de aplicações: JWT httpOnly, ZDD</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Telecomunicações</h3>
+            <ul>
+              <li>Rádio-enlace PDH/SDH (PTP/PtMP)</li>
+              <li>Redes móveis 2G/3G/4G/5G</li>
+              <li>Backbone óptico DWDM</li>
+              <li>Certificação de fibra (OTDR, Viavi, JDSU, EXFO)</li>
+              <li>Radares e balanças (Inmetro/AEM-MS)</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <ul>
+              <li>Go: arquitetura modular, REST e migrações</li>
+              <li>Python: CLI-first, Netmiko, agendador cron</li>
+              <li>Autenticação JWT com cookie httpOnly</li>
+              <li>Bots de notificação (Telegram)</li>
+              <li>Versionamento semântico e releases automatizadas</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <ul>
+              <li>Svelte 5 + Vite + Tailwind CSS v4</li>
+              <li>SPAs sem framework (router próprio)</li>
+              <li>React e Bootstrap (legados)</li>
+              <li>Gráficos de histórico e sinais ópticos</li>
+              <li>Tema claro/escuro, UX responsiva</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Infra e DevOps</h3>
+            <ul>
+              <li>Docker e docker-compose multi-estágio</li>
+              <li>Traefik e Nginx (proxy reverso, re-resolução DNS)</li>
+              <li>Prometheus e Grafana (observabilidade)</li>
+              <li>MariaDB, MySQL, SQLite e Chromium headless</li>
+              <li>GitHub Actions, submódulos e gitlinks</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Automação</h3>
+            <ul>
+              <li>Coleta read-only de equipamentos de rede</li>
+              <li>Buffer offline e reenvio resiliente</li>
+              <li>Integrações com TOTVS/MeuRH e sorteador de loteria</li>
+              <li>Prestação de contas e geração de recibos</li>
+              <li>Scripts e rotinas para RH e Logística</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stack ===== -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <h2 class="section-title reveal">Stack e tecnologias</h2>
+        <p class="stack-intro reveal">
+          Tecnologias usadas no ecossistema atual de projetos — do coleta em campo ao dashboard na nuvem.
+        </p>
+
+        <div class="stack-block reveal">
+          <h3>Linguagens</h3>
+          <div class="stack-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Go</span>
+            <span class="chip">C++17</span>
+            <span class="chip">PHP 8</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Svelte</span>
+            <span class="chip">Shell</span>
+            <span class="chip">HTML / CSS / JS</span>
+          </div>
+        </div>
+
+        <div class="stack-block reveal">
+          <h3>Backend e APIs</h3>
+          <div class="stack-chips">
+            <span class="chip">Go (modular)</span>
+            <span class="chip">FastAPI (legado)</span>
+            <span class="chip">REST</span>
+            <span class="chip">JWT httpOnly</span>
+            <span class="chip">Netmiko</span>
+            <span class="chip">Bot Telegram</span>
+          </div>
+        </div>
+
+        <div class="stack-block reveal">
+          <h3>Frontend</h3>
+          <div class="stack-chips">
+            <span class="chip">Svelte 5</span>
+            <span class="chip">Vite</span>
+            <span class="chip">Tailwind CSS v4</span>
+            <span class="chip">React (legado)</span>
+            <span class="chip">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="stack-block reveal">
+          <h3>Infraestrutura</h3>
+          <div class="stack-chips">
+            <span class="chip">Docker</span>
+            <span class="chip">docker-compose</span>
+            <span class="chip">Traefik</span>
+            <span class="chip">Nginx</span>
+            <span class="chip">Prometheus</span>
+            <span class="chip">Grafana</span>
+            <span class="chip">MariaDB</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">Chromium headless</span>
+          </div>
+        </div>
+
+        <div class="stack-block reveal">
+          <h3>Qualidade e Release</h3>
+          <div class="stack-chips">
+            <span class="chip">pytest</span>
+            <span class="chip">Testes Go</span>
+            <span class="chip">ruff</span>
+            <span class="chip">SemVer</span>
+            <span class="chip">Conventional Commits</span>
+            <span class="chip">Git submódulos</span>
+            <span class="chip">Release automatizada</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Projetos ===== -->
+    <section class="section section-alt" id="projetos">
+      <div class="container">
+        <h2 class="section-title reveal">Projetos</h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">PC</span>
+              <span class="project-lang">Python</span>
+            </div>
+            <h3>PreventiveCheck</h3>
+            <p class="muted">Coleta preventiva de equipamentos de rede</p>
+            <p>
+              Sistema CLI-first que realiza coletas preventivas read-only de equipamentos de rede (Huawei/Nokia) via
+              Netmiko, com agendador cron, cache de fabricante, buffer offline e envio à API central. Foco em segurança:
+              privilégio mínimo, whitelist de comandos e credenciais criptografadas em repouso.
+            </p>
+            <ul class="feature-list">
+              <li>Agendador cron com trava por tarefa e deadline global</li>
+              <li>Buffer offline com reenvio automático a cada 5 min</li>
+              <li>SQLite + criptografia Fernet para credenciais</li>
+              <li>Suíte pytest com alta cobertura</li>
+              <li>SemVer + Conventional Commits + release automatizada</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary btn-sm" href="https://preventivecheck.vandinho.com.br" target="_blank"
+                rel="noopener">Aplicação</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">API</span>
+              <span class="project-lang">Go</span>
+            </div>
+            <h3>api</h3>
+            <p class="muted">Backend central modular em Go</p>
+            <p>
+              Backend que centraliza os módulos do ecossistema: <code>auth</code> (JWT + cookie httpOnly),
+              <code>preventive_check</code>, <code>auditoria_tbsa</code>, <code>gestao</code>, <code>ppr</code>,
+              <code>finance</code>, <code>monitor_rede</code>, <code>reports</code>, <code>diagnostics</code>
+              (containers, cobertura, versões) e <code>bot_telegram</code>. Versionamento semântico centralizado.
+            </p>
+            <ul class="feature-list">
+              <li>Arquitetura modular em <code>internal/modules</code></li>
+              <li>Migrações e modelos por módulo</li>
+              <li>Endpoints admin de usuários e snapshot de containers</li>
+              <li>Autenticação JWT com cookie httpOnly (anti-XSS/CSRF)</li>
+              <li>Testes por módulo (handler, service, router)</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">DX</span>
+              <span class="project-lang">Shell · Docker</span>
+            </div>
+            <h3>docker_projects</h3>
+            <p class="muted">Orquestração do ecossistema</p>
+            <p>
+              Infraestrutura que sobe todos os serviços via docker-compose e Traefik: api, frontends Svelte, loteria e
+              addons de observabilidade. Inclui Dockerfiles customizados (chromium, node/PPR, php-fpm, phpmyadmin,
+              nginx) e submódulos git com versionamento por gitlinks.
+            </p>
+            <ul class="feature-list">
+              <li>docker-compose multi-serviço + Traefik</li>
+              <li>Observabilidade: Prometheus, Grafana, docker-collector</li>
+              <li>Dockerfiles otimizados (multi-estágio, não-root)</li>
+              <li>Submódulos e bumps de gitlinks (SemVer)</li>
+              <li>Docs: auth_api e preventive_api</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">SPA</span>
+              <span class="project-lang">Svelte 5 · TS</span>
+            </div>
+            <h3>Frontends Svelte</h3>
+            <p class="muted">admin, auditoria e preventivas</p>
+            <p>
+              Três SPAs em Svelte 5 + Vite + Tailwind v4 consumindo o backend Go: painel de administração
+              (containers, coverage, versões), módulo Auditoria TBSA (relatório, resumo, equipe, importação CSV) e
+              módulo Preventivas (histórico de coleta, sinais críticos, rotas manuais, status).
+            </p>
+            <ul class="feature-list">
+              <li>SPA sem SvelteKit (router próprio)</li>
+              <li>Nginx não-root :8080 com proxy reverso</li>
+              <li>Re-resolução DNS do upstream (ZDD)</li>
+              <li>Tema claro/escuro via Tailwind v4</li>
+              <li>JWT em cookie httpOnly (<code>credentials: include</code>)</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">CC</span>
+              <span class="project-lang">C++17</span>
+            </div>
+            <h3>codectx</h3>
+            <p class="muted">CodeContext CLI</p>
+            <p>
+              CLI de processamento de arquivos que moderniza o clássico <code>cat</code>. Com arquitetura de máquina de
+              estados em C++, varre diretórios recursivamente com filtros precisos de inclusão e exclusão, ignorando
+              dependências (<code>node_modules</code>, <code>.git</code>, <code>venv</code>) e binários — pronta para
+              code review ou para alimentar modelos de IA.
+            </p>
+            <ul class="feature-list">
+              <li>Whitelist de arquivos (<code>-f</code>) e extensões (<code>-e</code>)</li>
+              <li>Blacklist inteligente de bibliotecas e mídias</li>
+              <li>Multi-targeting dinâmico (<code>-a</code>)</li>
+              <li>Saída formatada para LLMs e code review</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary btn-sm" href="https://github.com/vandinho10/codectx" target="_blank"
+                rel="noopener">Ver no GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">LT</span>
+              <span class="project-lang">Python</span>
+            </div>
+            <h3>loteria</h3>
+            <p class="muted">Sorteador da loteria federal</p>
+            <p>
+              Processa dados federais e sorteia números da loteria com base no resultado oficial, em container com base
+              Chromium headless e MySQL. É o motor do "Lot. Sorteios" disponível no site.
+            </p>
+            <ul class="feature-list">
+              <li>Processamento de dados federais</li>
+              <li>Sorteio e conferência de resultados</li>
+              <li>Docker + Chromium headless + MySQL</li>
+              <li>Robustez de conexão e logging simplificado</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <h3 class="subsection-title reveal">Legados e automações</h3>
+        <div class="legacy-list reveal">
+          <div class="legacy-item">
+            <strong>preventivas</strong> <span class="muted">— PreventiveCheck Server (FastAPI + React), precursor do
+              backend Go</span>
+          </div>
+          <div class="legacy-item">
+            <strong>gestao</strong> <span class="muted">— Sistema de prestação de contas (PHP 8 MVC/PDO, Bootstrap,
+              MySQL)</span>
+          </div>
+          <div class="legacy-item">
+            <strong>get_data_rh</strong> <span class="muted">— Extração de dados do MeuRH/TOTVS (perfil, timesheets,
+              holerite)</span>
+          </div>
+          <div class="legacy-item">
+            <strong>py_recibos</strong> <span class="muted">— Gerador de recibos com exportação HTML</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Links úteis ===== -->
+    <section class="section" id="links">
+      <div class="container">
+        <h2 class="section-title reveal">Links úteis</h2>
+        <div class="links-grid">
+          <a class="link-card reveal" href="https://vandinho.com.br" target="_blank" rel="noopener">
+            <span class="link-name">vandinho.com.br</span>
+            <span class="link-desc">Site pessoal</span>
+          </a>
+          <a class="link-card reveal" href="https://ppr.vandinho.com.br" target="_blank" rel="noopener">
+            <span class="link-name">Cálculo PPR</span>
+            <span class="link-desc">Calculadora de PPR</span>
+          </a>
+          <a class="link-card reveal" href="https://vandinho.com.br/lot_sorteios" target="_blank" rel="noopener">
+            <span class="link-name">Lot. Sorteios</span>
+            <span class="link-desc">Sorteios de loteria</span>
+          </a>
+          <a class="link-card reveal" href="https://preventivecheck.vandinho.com.br" target="_blank" rel="noopener">
+            <span class="link-name">PreventiveCheck</span>
+            <span class="link-desc">Coleta preventiva de rede</span>
+          </a>
+          <a class="link-card reveal" href="https://github.com/vandinho10" target="_blank" rel="noopener">
+            <span class="link-name">GitHub</span>
+            <span class="link-desc">github.com/vandinho10</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section class="section section-alt" id="contato">
+      <div class="container">
+        <h2 class="section-title reveal">Contato</h2>
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="https://github.com/vandinho10" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z" />
+              </svg>
+            </span>
+            <span class="contact-text">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">@vandinho10</span>
+            </span>
+          </a>
+          <a class="contact-card reveal" href="https://www.linkedin.com/in/vandersonoliveira/" target="_blank"
+            rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
+              </svg>
+            </span>
+            <span class="contact-text">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">@vandersonoliveira</span>
+            </span>
+          </a>
+          <a class="contact-card reveal" href="https://www.instagram.com/vandersono.liveira" target="_blank"
+            rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44Z" />
+              </svg>
+            </span>
+            <span class="contact-text">
+              <span class="contact-label">Instagram</span>
+              <span class="contact-value">@vandersono.liveira</span>
+            </span>
+          </a>
+          <a class="contact-card reveal" href="mailto:contato@vandinho.com.br">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z" />
+              </svg>
+            </span>
+            <span class="contact-text">
+              <span class="contact-label">E-mail</span>
+              <span class="contact-value">contato@vandinho.com.br</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Vanderson Oliveira.</p>
+      <p class="muted">Hospedado no <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
